@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<?import sample.utils.ForbidInputTextField?>
+<?import sample.utils.NumberTextField?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="183.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox layoutX="14.0" layoutY="120.0" spacing="5.0">
+         <children>
+            <NumberTextField fx:id="year2" prefHeight="23.0" prefWidth="49.0" text="2017" />
+            <Label text="年">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <NumberTextField fx:id="month2" prefHeight="23.0" prefWidth="49.0" text="8" />
+            <Label text="月">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <NumberTextField fx:id="day2" prefHeight="23.0" prefWidth="49.0" text="4" />
+            <Label text="日">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <NumberTextField fx:id="hour2" prefHeight="23.0" prefWidth="49.0" text="00" />
+            <Label text="时">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <NumberTextField fx:id="min2" prefHeight="23.0" prefWidth="49.0" text="00" />
+            <Label text="分">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <NumberTextField fx:id="second2" prefHeight="23.0" prefWidth="49.0" text="00" />
+            <Label text="秒">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="btn2" layoutX="443.0" layoutY="120.0" mnemonicParsing="false" onAction="#toTimeStamp" text="时间戳" />
+      <HBox layoutX="233.0" layoutY="45.0" spacing="5.0">
+         <children>
+            <ForbidInputTextField fx:id="year1" prefHeight="23.0" prefWidth="49.0" />
+            <Label text="年">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <ForbidInputTextField fx:id="month1" prefHeight="23.0" prefWidth="49.0" />
+            <Label text="月">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <ForbidInputTextField fx:id="day1" prefHeight="23.0" prefWidth="49.0" />
+            <Label text="日">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <ForbidInputTextField fx:id="hour1" prefHeight="23.0" prefWidth="49.0" />
+            <Label text="时">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <ForbidInputTextField fx:id="min1" prefHeight="23.0" prefWidth="49.0" />
+            <Label text="分">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <ForbidInputTextField fx:id="second1" prefHeight="23.0" prefWidth="49.0" />
+            <Label text="秒">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <ForbidInputTextField fx:id="timestamp2" layoutX="514.0" layoutY="120.0" />
+      <Button fx:id="btn1" layoutX="166.0" layoutY="45.0" mnemonicParsing="false" onAction="#formatTimeStamp" text="格式化" />
+      <NumberTextField fx:id="timestamp1" layoutX="14.0" layoutY="45.0" text="1501814685744" />
+   </children>
+</Pane>

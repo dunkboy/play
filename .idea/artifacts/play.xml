@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="play">
+    <output-path>$PROJECT_DIR$/jar</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="My desc" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="My App" />
+        <option name="vendor" value="My Company" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="play.jar">
+        <element id="module-output" name="play" />
+      </element>
+    </root>
+  </artifact>
+</component>
